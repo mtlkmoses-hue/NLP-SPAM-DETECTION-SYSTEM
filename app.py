@@ -12,7 +12,7 @@ def text_preprocess(message):
     nopunc = ''.join(nopunc)
     return [word for word in nopunc.split() if word.lower() not in stopwords.words('english')]
 
-st.title("EDTECH Spam Shield")
+st.title("BPC Spam Shield")
 
 try:
     tfidf = joblib.load('tfidf_vectorizer.pkl')
