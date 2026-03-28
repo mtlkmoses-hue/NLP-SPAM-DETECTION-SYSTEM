@@ -5,7 +5,6 @@ import string
 import nltk
 from nltk.corpus import stopwords
 
-# Important: Add this to ensure the cloud downloads the NLP data
 nltk.download('stopwords')
 
 def text_preprocess(message):
