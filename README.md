@@ -6,7 +6,7 @@ It uses Natural Language Processing (NLP) techniques and a Naive Bayes classifie
 
 The system is deployed using **Streamlit** for a simple and interactive user interface.
 # Web Application
-[Insert your Streamlit Link Here]
+(https://nlp-spam-detection-system.streamlit.app/)
 
 ## Features
 - Text preprocessing (punctuation removal, stopword filtering)
