@@ -1,45 +1,37 @@
-# EDTECH Communication Spam Shield
-Project 3: NLP-Spam Detection System
+# EDTECH Spam Shield – SMS Spam Detection System
 
-# Project Overview
-This project addresses the security and efficiency of communications at EDTECH. Using Natural Language Processing (NLP) and Machine Learning, this system automatically classifies incoming messages as Ham (Legitimate) or Spam.
+## Overview
+EDTECH Spam Shield is a machine learning-based application that detects whether a message is **Spam or Ham (Safe)**.  
+It uses Natural Language Processing (NLP) techniques and a Naive Bayes classifier trained on SMS data.
 
-By filtering out marketing noise and potential phishing threats, The staff can focus on critical grid maintenance alerts and genuine customer service inquiries.
-
+The system is deployed using **Streamlit** for a simple and interactive user interface.
 # Web Application
 [Insert your Streamlit Link Here]
 
-# Technical Workflow
-Data Understanding: Analyzed a dataset of 5,572 messages identifying a clear correlation between message length and spam probability.
+## Features
+- Text preprocessing (punctuation removal, stopword filtering)
+- TF-IDF vectorization for text feature extraction
+- Machine learning classification using Multinomial Naive Bayes
+- Real-time spam detection via Streamlit web app
+- Model and vectorizer saved for reuse (`.pkl` files)
 
-Preprocessing: Custom function to remove punctuation and English stopwords.
+## Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- NLTK
+- Streamlit
+- Joblib
 
-Vectorization: Implemented TF-IDF (Term Frequency-Inverse Document Frequency) to convert text into numerical features.
+## Dataset
+The model is trained on an SMS spam dataset containing labeled messages:
+- **Ham (0)** → Normal messages  
+- **Spam (1)** → Unwanted messages
 
-Model: Trained a Multinomial Naive Bayes classifier, achieving high accuracy and low false-positive rates.
 
-Deployment: Built a user-friendly interface using Streamlit for real-time message analysis.
+## Installation
 
-# Structure
-Spam_Detection.ipynb: Full 11-step Data Science workflow.
+1. Clone the repository:
+git clone https://github.com/mtlkmoses-hue/NLP-SPAM-DETECTION-SYSTEM
 
-app.py: Streamlit application code.
-
-spam_model.pkl: The trained Naive Bayes model.
-
-tfidf_vectorizer.pkl: The saved TF-IDF vectorizer.
-
-requirements.txt: Necessary Python libraries.
-
-# Product Thinking
-This tool acts as a Digital Security Layer for edtech. It reduces the risk of corporate phishing and improves operational response times by prioritizing verified customer communications.
-
-Your Final Step: requirements.txt
-For this specific project, your requirements.txt file should contain:
-
-Plaintext
-streamlit
-pandas
-scikit-learn
-joblib
-nltk
